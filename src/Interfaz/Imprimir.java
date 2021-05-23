@@ -12,6 +12,7 @@ public class Imprimir {
         int d=0;
         while(true){
             borrar();
+            System.out.println("espacio para salir    enter para refrescar");
             System.out.print("Ingrese numero del problema: ");
             int num=0;
             String n=dt.pedirNum();
@@ -78,7 +79,7 @@ public class Imprimir {
     }
     private void e1(){
         Ejer_1 e=new Ejer_1();
-        System.out.println("Ejercicio num 20");
+        System.out.println("Ejercicio num 1-pdf 20\nHallar el seno de un angulo en grados");
         System.out.print("Angulo en grados: ");
         int x=dt.pedirAngulo();
         e.set(x);
@@ -87,7 +88,7 @@ public class Imprimir {
     }
     private void e2(){
         Ejer_2 e=new Ejer_2();
-        System.out.println("Ejercicio num 20");
+        System.out.println("Ejercicio num 2-pdf 11\nHalllar el exponente natural de un numero");
         System.out.print("exponente de e: ");
         int x=dt.pedirExp();
         e.set(x);
@@ -96,7 +97,7 @@ public class Imprimir {
     }
     private void e3(){
         Ejer_3 e=new Ejer_3();
-        System.out.println("Ejercicio num 20");
+        System.out.println("Ejercicio num 3-pdf 21\nContar la cantidad de dinero dado teniedo las cantidades de los billetes");
         System.out.print("cantidad de monedas y billetes de 1,2,5,10,20,50:\n");
         int[] x=dt.pedirDinero();
         String cad;
@@ -105,48 +106,37 @@ public class Imprimir {
     }
     private void e4(){
         Ejer_4 e=new Ejer_4();
-        System.out.println("Ejercicio num 20");
+        System.out.println("Ejercicio num 4-pdf 18\nHallar en interes compuesto de un numero fijo");
         System.out.println("interes compuesto de 1500$ en un periodo de 80años a una tasa del 15% ");
         System.out.println("1500(1+0.15)^80="+e.interes());
 
     }
     private void e5(){
-        Ejer_2 e=new Ejer_2();
-        System.out.println("Ejercicio num 20");
-        System.out.print("exponente de e: ");
-        int x=dt.pedirExp();
-        e.set(x);
-        String cad=cad="e^"+x+"="+e.get();
-        System.out.println(cad);
+        System.out.println("Ejercicio num 5-pdf 10\nDeterminar los promedios de alumnos de una clase y de toda la escuela");
+        dt.edades();
     }
     private void e6(){
-        Ejer_2 e=new Ejer_2();
-        System.out.println("Ejercicio num 20");
-        System.out.print("exponente de e: ");
-        int x=dt.pedirExp();
-        e.set(x);
-        String cad=cad="e^"+x+"="+e.get();
-        System.out.println(cad);
+        System.out.print("Ejercicio num 6-pdf 19\nCalcular los impuestos de los autos segun su categoria");
+        dt.autos();
     }
     private void e7(){
         Ejer_7 e=new Ejer_7();
-        System.out.println("Ejercicio num 20");
+        System.out.println("Ejercicio num 7-pdf 17\nHallar una tabla de multiplicar de un numero fijo");
         System.out.print("tabla de multiplicar: ");
         System.out.println(e.mult(dt.numMult()));
     }
     private void e8(){
-        System.out.println("Ejercicio num 20");
+        System.out.println("Ejercicio num 8-pdf 16\nHallar el cubo de ciertos numeros");
         System.out.println("ponga numeros para sacarle el cubo:");
         dt.numCubo();
     }
     private void e9(){
-        System.out.println("Ejercicio num 20");
-        System.out.print("trabajadores: ");
+        System.out.println("Ejercicio num 9-pdf 15\ncalculas los sueldos de los tabajadores");
+        System.out.print("cantidad de trabajadores: ");
         dt.sueldoTrabajador();
     }
     private void e10(){
-        System.out.println("Ejercicio num 20");
-        System.out.print("notas: ");
+        System.out.println("Ejercicio num 10-pdf 14\nCalcular que estudiantes son aprobados y desaprobados");
         dt.notas();
     }
     private void borrar() throws IOException, InterruptedException{new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();}

@@ -38,11 +38,42 @@ public class Datos {
     }
     //datos problema 4
     //no hay datos por pedir
+    
     //datos problema 5
+    public void edades(){
+        int salones,alum,promedio1=0,promedio2=0,alumT=0;
+        System.out.print("Cuantos salones hay: ");
+        salones=sc.nextInt();
+        for(int i=0;i<salones;i++){
+            System.out.println("Cuantos alumnos hay en el salon "+(i+1)+": ");
+            alum=sc.nextInt();
+                for(int j=0;j<alum;j++){
+                    System.out.print("alumno "+(i+1)+": ");
+                    promedio1+=sc.nextInt();
+                }
+                System.out.println("promedio del salon "+(i+1)+": "+(promedio1/alum));
+            promedio2+=promedio1;
+            alumT+=alum;
+        }
+        System.out.println("promedio de la escuela es: "+(promedio2/alumT));
+    }
+    
     //datos problema 6
-    
-    
-    
+    public void autos(){
+        System.out.println("cuantos autos tines: ");
+        int autos=sc.nextInt();
+        float total=0;
+        for(int i=0;i<autos;i++){
+            System.out.print("categoria: ");
+            int cat=sc.nextInt();
+            System.out.print("valor del auto: ");
+            float valor=sc.nextFloat();
+            float impuesto=Ejer_6.totalP(cat, valor);
+            System.out.println("impuesto del auto: "+impuesto);
+            total+=impuesto;
+        }
+        System.out.println("la suma de los impuesto es: "+total);
+    }
     
     //datos problema 7
     public int numMult(){

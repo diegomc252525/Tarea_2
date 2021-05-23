@@ -32,9 +32,7 @@ public class Main{
     }*/
 
     public static void main(String[] args) throws IOException, InterruptedException{
-	//Selector sl=new Selector();
-        //Ejer e=(Ejer) sl.seleccion();
-        //System.out.println(e.get());
+
         Imprimir im=new Imprimir();
         im.imprimir();
     }

@@ -1,14 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Algoritmos;
 
-/**
- *
- * @author toshiba
- */
+//ejercicio 
 public class Ejer_5 {
-    
+    public float promedio(int[] edades){
+        float promedio=0;
+        for(int i=0;i<edades.length;i++){
+            promedio+=edades[i];
+        }
+        return promedio/edades.length;
+    }
 }
